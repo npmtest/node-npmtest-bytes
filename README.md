@@ -1,6 +1,6 @@
 # npmtest-bytes
 
-#### basic test coverage for  bytes (v2.5.0)  [![npm package](https://img.shields.io/npm/v/npmtest-bytes.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-bytes) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-bytes.svg)](https://travis-ci.org/npmtest/node-npmtest-bytes)
+#### basic test-coverage for  [bytes (v2.5.0)](https://github.com/visionmedia/bytes.js#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-bytes.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-bytes) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-bytes.svg)](https://travis-ci.org/npmtest/node-npmtest-bytes)
 
 #### Utility to parse a string bytes to bytes and vice-versa
 
@@ -35,15 +35,48 @@
 ```json
 
 {
-    "name": "bytes",
-    "description": "Utility to parse a string bytes to bytes and vice-versa",
-    "version": "2.5.0",
-    "author": "TJ Holowaychuk <tj@vision-media.ca> (http://tjholowaychuk.com)",
+    "author": {
+        "name": "TJ Holowaychuk",
+        "url": "http://tjholowaychuk.com"
+    },
+    "bugs": {
+        "url": "https://github.com/visionmedia/bytes.js/issues"
+    },
+    "component": {
+        "scripts": {
+            "bytes/index.js": "index.js"
+        }
+    },
     "contributors": [
-        "Jed Watson <jed.watson@me.com>",
-        "Théo FIDRY <theo.fidry@gmail.com>"
+        {
+            "name": "Jed Watson"
+        },
+        {
+            "name": "Théo FIDRY"
+        }
     ],
-    "license": "MIT",
+    "dependencies": {},
+    "description": "Utility to parse a string bytes to bytes and vice-versa",
+    "devDependencies": {
+        "mocha": "1.21.5",
+        "nyc": "10.1.2"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "4c9423ea2d252c270c41b2bdefeff9bb6b62c06a",
+        "tarball": "https://registry.npmjs.org/bytes/-/bytes-2.5.0.tgz"
+    },
+    "engines": {
+        "node": ">= 0.6"
+    },
+    "files": [
+        "History.md",
+        "LICENSE",
+        "Readme.md",
+        "index.js"
+    ],
+    "gitHead": "a4b9af2bf289175f12b3538eb172f2489844b1ec",
+    "homepage": "https://github.com/visionmedia/bytes.js#readme",
     "keywords": [
         "byte",
         "bytes",
@@ -53,30 +86,28 @@
         "convert",
         "converter"
     ],
-    "repository": "visionmedia/bytes.js",
-    "component": {
-        "scripts": {
-            "bytes/index.js": "index.js"
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "dougwilson"
+        },
+        {
+            "name": "tjholowaychuk"
         }
-    },
-    "devDependencies": {
-        "mocha": "1.21.5",
-        "nyc": "10.1.2"
-    },
-    "files": [
-        "History.md",
-        "LICENSE",
-        "Readme.md",
-        "index.js"
     ],
-    "engines": {
-        "node": ">= 0.6"
+    "name": "bytes",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/visionmedia/bytes.js.git"
     },
     "scripts": {
         "test": "mocha --check-leaks --reporter spec",
         "test-ci": "nyc --reporter=text npm test",
         "test-cov": "nyc --reporter=html --reporter=text npm test"
-    }
+    },
+    "version": "2.5.0",
+    "bin": {}
 }
 ```
 
